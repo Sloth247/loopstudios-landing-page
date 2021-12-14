@@ -1,0 +1,65 @@
+@use '../sass/variables';
+@use '../sass/mixins';
+
+.interactive {
+  padding-top: 6rem;
+  text-align: center;
+  @include mixins.mq(large) {
+    position: relative;
+    text-align: left;
+  }
+  &__hero {
+    &-mob {
+      width: 100%;
+      @include mixins.mq(medium) {
+        display: none;
+      }
+    }
+    &-desk {
+      width: 100%;
+      display: none;
+      @include mixins.mq(medium) {
+        display: unset;
+      }
+      @include mixins.mq(large) {
+        width: 45.6875rem;
+      }
+    }
+  }
+  &__text-container {
+    background-color: variables.$color-white;
+    @include mixins.mq(large) {
+      width: 33.8125rem;
+      padding-top: 6rem;
+      padding-left: 6rem;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+    }
+  }
+  &__title {
+    font-family: variables.$font-title;
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin: 3rem 0.5rem 1rem 0.5rem;
+    @include mixins.mq(large) {
+      font-size: 3rem;
+      margin: 0;
+    }
+  }
+  &__description {
+    color: variables.$color-dark-gray;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1.6;
+    @include mixins.mq(medium) {
+      padding: 0 4rem;
+      margin: 0;
+      margin-top: 2rem;
+    }
+    @include mixins.mq(large) {
+      padding: 0;
+    }
+  }
+}
