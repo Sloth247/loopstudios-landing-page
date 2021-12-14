@@ -55,6 +55,9 @@
       &:hover,
       &:active {
         text-decoration: underline 1px solid variables.$color-white;
+        @include mixins.mq(medium) {
+          text-decoration: unset;
+        }
       }
       &:hover::after {
         @include mixins.mq(medium) {
