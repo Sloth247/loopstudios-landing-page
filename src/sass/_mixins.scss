@@ -1,0 +1,23 @@
+@mixin mq($breakpoint) {
+  @if $breakpoint == small {
+    @media screen and (min-width: 30em) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media screen and (min-width: 50em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == large {
+    @media screen and (min-width: 78em) {
+      @content;
+    }
+  }
+  @if $breakpoint == adjustment {
+    @media screen and (min-width: 87.5em) {
+      @content;
+    }
+  }
+}
