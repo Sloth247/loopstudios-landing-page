@@ -1,4 +1,3 @@
-import './Main.scss';
 import Interactive from '../components/Interactive';
 import Creation from '../components/Creation';
 
