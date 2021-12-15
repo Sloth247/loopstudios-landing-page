@@ -5,8 +5,9 @@
   background-color: variables.$color-black;
   text-align: center;
   padding-top: 3.5rem;
-  padding-bottom: 3.5rem;
+
   &__nav {
+    padding-bottom: 3.5rem;
     @include mixins.mq(large) {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

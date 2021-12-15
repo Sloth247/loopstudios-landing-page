@@ -3,7 +3,7 @@ import './App.scss';
 import Header from './layout/Header';
 import Main from './layout/Main';
 import Footer from './layout/Footer';
-import Attribution from './components/Attribution';
+
 import About from './pages/About';
 import Careers from './pages/Careers';
 import Events from './pages/Events';
@@ -22,7 +22,6 @@ function App() {
               <Header />
               <Main />
               <Footer />
-              <Attribution />
             </>
           }
         ></Route>

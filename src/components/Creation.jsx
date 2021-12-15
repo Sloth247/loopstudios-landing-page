@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom';
 
 export default function Creation() {
   return (
-    <section className="creation">
-      <h2 className="creation__title">Our Creations</h2>
+    <section className="creation" aria-labelledby="creation">
+      <h2 className="creation__title" id="creation">
+        Our Creations
+      </h2>
       <ul className="creation__list">
         <li className="creation__list-item">
           <Link to="./products/deep-earth" className="creation__link-earth">

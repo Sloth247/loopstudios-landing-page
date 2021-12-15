@@ -5,6 +5,7 @@ import FacebookIcon from '../images/icon-facebook.svg';
 import InstagramIcon from '../images/icon-instagram.svg';
 import PinterestIcon from '../images/icon-pinterest.svg';
 import TwitterIcon from '../images/icon-twitter.svg';
+import Attribution from '../components/Attribution';
 
 export default function Footer() {
   return (
@@ -58,6 +59,7 @@ export default function Footer() {
           &copy; 2021 Loopstudios. All rights reserved.
         </p>
       </nav>
+      <Attribution />
     </footer>
   );
 }
