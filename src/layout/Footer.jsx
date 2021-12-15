@@ -34,24 +34,24 @@ export default function Footer() {
         </ul>
         <ul className="footer__icon-container">
           <li>
-            <Link to="http://facebook.com">
+            <a href="http://facebook.com">
               <img src={FacebookIcon} alt="facebook" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="http://twitter.com">
+            <a href="http://twitter.com">
               <img src={TwitterIcon} alt="twitter" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="http://pinterest.com">
+            <a href="http://pinterest.com">
               <img src={PinterestIcon} alt="pinterest" />
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="http://instagram.com">
+            <a href="http://instagram.com">
               <img src={InstagramIcon} alt="instagram" />
-            </Link>
+            </a>
           </li>
         </ul>
         <p className="footer__copyrights">

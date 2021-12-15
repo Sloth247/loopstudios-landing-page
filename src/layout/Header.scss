@@ -2,15 +2,27 @@
 @use '../sass/mixins';
 
 .header {
-  background-image: url('../images/mobile/image-hero.jpg');
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../images/mobile/image-hero.jpg');
+
   background-position: top center;
   background-size: cover;
   padding-top: 2.5rem;
   padding-bottom: 14.1875rem;
   position: relative;
   @include mixins.mq(medium) {
-    background-image: url('../images/desktop/image-hero.jpg');
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('../images/desktop/image-hero.jpg');
     padding-bottom: 9.125rem;
+    padding-top: 4rem;
   }
   &__icon-container {
     display: flex;
@@ -26,7 +38,7 @@
   }
   &__title {
     padding: 1.5rem;
-    border: 1px solid variables.$color-white;
+    border: 2px solid variables.$color-white;
     color: variables.$color-white;
     margin-top: 10.1875rem;
     font-size: 2.5rem;
